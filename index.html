@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Romántica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hearts-container"></div>
+
+    <div class="player-container">
+        <div class="header">
+            <h1>"Para ti❤️"</h1>
+            <p>Con mucho amor mi princesa 💕</p>
+        </div>
+
+        <div class="album-cover" id="album-cover">
+            </div>
+
+        <div class="song-info">
+            <p class="song-title" id="song-title">Selecciona una canción</p>
+            <p class="song-artist" id="song-artist">Artista</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-info">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="prev-btn">⏮</button>
+            <button class="control-btn play-btn" id="play-btn">⏯</button>
+            <button class="control-btn" id="next-btn">⏭</button>
+        </div>
+
+        <ul class="playlist" id="playlist">
+            <li class="active"
+                data-src="https://raw.githubusercontent.com/jesuxzx/M-sicaaaa/355ab305c2be4043e19759d223b9cdc599e1b68f/Los%20Yonic's%20-%20Y%20Te%20Amo%20(Audio).mp3"
+                data-cover="https://raw.githubusercontent.com/jesuxzx/No-se/e81da4a07a6ef69f0c0465f0a12cbd449c264e85/IMG-20250612-WA0302.jpg"
+                data-title="Y Te Amo"
+                data-artist="Los Yonics"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Y Te Amo</div>
+                    <div class="song-artist">Los Yonics</div>
+                </div>
+            </li>
+            <li data-src="https://raw.githubusercontent.com/jesuxzx/M-sicaaaa/f76e859e87336ef5622f36dfd82bcb50644a5c3b/J%C3%B3sean%20Log%20-%20Chachach%C3%A1%20(Lyric%20Video).mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/5c6b379c6f336daa51347040d23165f43ed93812/VID-20250407-WA0138.mp4"
+                data-title="Chachachá"
+                data-artist="Jósean Log"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Chachachá</div>
+                    <div class="song-artist">Jósean Log</div>
+                </div>
+            </li>
+            <li data-src="https://raw.githubusercontent.com/jesuxzx/Dxd/eec5e817c2d0a2c96eac24c2872736be531a1c88/ytmp3free.cc_diego-luna-te-amo-y-mas-sub-espaol-youtubemp3free.org.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/5c6b379c6f336daa51347040d23165f43ed93812/VID-20250418-WA0038.mp4"
+                data-title="Te Amo Y Más"
+                data-artist="Diego Luna"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Te Amo Y Más</div>
+                    <div class="song-artist">Diego Luna</div>
+                </div>
+            </li>
+            <li data-src="https://raw.githubusercontent.com/jesuxzx/M-sicaaaa/main/dime%20%5Bj3M-vXdP5Pw%5D.mp3"
+                data-cover="https://raw.githubusercontent.com/jesuxzx/M-sicaaaa/600f83188653006c3ce785d26a675d28b31d5565/VID-20250610-WA0136.mp4"
+                data-title="Dime"
+                data-artist="Kevin Karl"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Dime</div>
+                    <div class="song-artist">Kevin Karl</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/0c9158811f6b8c83a23b8999a702a93078bd14ad/Grupo%20Viento%20y%20Sol%20-%20Par%20de%20Anillos%20(Letra).mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/b87b3a14d053a1db37b9a6937f1d7728bd2e22c2/VID-20250414-WA0072.mp4"
+                data-title="Ese par de anillos"
+                data-artist="Grupo viento y sol"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Ese par de anillos</div>
+                    <div class="song-artist">Grupo viento y sol</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/0c9158811f6b8c83a23b8999a702a93078bd14ad/Joan%20Sebastian%20-%20Me%20Gustas%20(Letra%20Oficial)%20%5BFraqb7wyofE%5D.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/ab75c5b468bdaff6a5bf96630c6a6c9defb0a703/IMG-20250710-WA0002.jpg"
+                data-title="Me gustas"
+                data-artist="Joan sebastian"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Me gustas</div>
+                    <div class="song-artist">Joan sebastian</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/5c6b379c6f336daa51347040d23165f43ed93812/Joan%20Sebastian%20-%20Eso%20Y%20Ms%20Letra%20Oficial.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/5c6b379c6f336daa51347040d23165f43ed93812/VID-20250511-WA0048.mp4"
+                data-title="Eso y más"
+                data-artist="Joan Sebastian"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Eso y más</div>
+                    <div class="song-artist">Joan Sebastian</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/5c6b379c6f336daa51347040d23165f43ed93812/Si%20Supieras%20-%20Kevin%20Kaarl%20__%20Letra.%20%E2%99%A1%20%5BXeCe6uOl6zw%5D.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/c9ae592ecd59936a17bc0226dd72eb6ff90830f7/VID-20250801-WA0023.mp4"
+                data-title="Si supieras"
+                data-artist="Kevin Kaarl"
+                data-type="video">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Si supieras</div>
+                    <div class="song-artist">Kevin Kaarl</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/ytmp3free.cc_valentin-elizalde-te-quiero-asi-letra-youtubemp3free.org.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/IMG-20250729-WA0058.jpg"
+                data-title="Te quiero así"
+                data-artist="Valentin elizalde"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Te quiero así</div>
+                    <div class="song-artist">Valentin elizalde</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/Joan_Sebastian_-_Disename_VIDEO_OFICIAL.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/IMG-20250803-WA0087.jpg"
+                data-title="Diséñame"
+                data-artist="Joan Sebastian"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Diséñame</div>
+                    <div class="song-artist">Joan Sebastian</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/El%20David%20-%20noms%20t.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/e9a464a8d7d14e2230e5eda80a55ed6af4e6ae8a/IMG-20250730-WA0036.jpg"
+                data-title="Nomás tu"
+                data-artist="El David"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Nomás tu</div>
+                    <div class="song-artist">El David</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Liberaci%C3%B3n%20-%20Ese%20Loco%20Soy%20Yo%20(Audio)%20%5BBDx1aolT2Fc%5D.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/IMG-20250730-WA0024.jpg"
+                data-title="Ese loco soy yo"
+                data-artist="Liberacion"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Ese loco soy yo</div>
+                    <div class="song-artist">Liberacion</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Kevin%20Kaarl%20-%20te%20quiero%20tanto%20(Video%20Oficial).mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/IMG-20250729-WA0064.jpg"
+                data-title="Te quiero tanto"
+                data-artist="Kevin Kaarl"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Te quiero tanto</div>
+                    <div class="song-artist">Kevin Kaarl</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/J%C3%B3sean%20Log%20-%20Beso%20(Lyric%20Video)%20%5BntdwWKaGaPQ%5D.mp3"
+                data-cover="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/IMG-20250618-WA0324.jpg"
+                data-title="Beso"
+                data-artist="Joseán log"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Beso</div>
+                    <div class="song-artist">Joseán log</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/New%20West%20-%20Those%20Eyes%20(Lyrics).mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250730-WA0055.jpg"
+                data-title="Those eyes"
+                data-artist="New west"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Those eyes</div>
+                    <div class="song-artist">New west</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Mac%20DeMarco%20__%20_My%20Kind%20Of%20Woman_.mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250803-WA0087.jpg"
+                data-title="My kind of woman"
+                data-artist="Mac DeMarco"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">My kind of woman</div>
+                    <div class="song-artist">Mac DeMarco</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Carla%20Morrison%20-%20Te%20regalo%20(letra)%20%5B39o-RH2OlCU%5D.mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250803-WA0088.jpg"
+                data-title="Te regalo"
+                data-artist="Carla Morrison"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Te regalo</div>
+                    <div class="song-artist">Carla Morrison</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Elvis%20Presley%20-%20Can't%20Help%20Falling%20In%20Love%20(Official%20Audio)%20-%20ElvisPresleyVEVO.mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250805-WA0040.jpg"
+                data-title="Can't help falling in love"
+                data-artist="Elvis Presley"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Can't help falling in love</div>
+                    <div class="song-artist">Elvis Presley</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/Reprudlctor-/raw/cd56583e62f6913cfc15e3661673b347f93370a9/Los%20Temerarios%20%C2%B7%20S%C3%A9%20Que%20Te%20Amo%20(Audio).mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250805-WA0041.jpg"
+                data-title="Se que te amo"
+                data-artist="Los Temerarios"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Se que te amo</div>
+                    <div class="song-artist">Los Temerarios</div>
+                </div>
+            </li>
+            <li data-src="https://github.com/jesuxzx/M-sica-/raw/46c876c66337c170805365b4e4d709e106c4f403/Lobo%20Domesticado.mp3"
+                data-cover="https://github.com/jesuxzx/Mi-novia-Loreidy-/raw/d84fec449485b382cc418c264b715b76c23a74fd/IMG-20250812-WA0069.jpg"
+                data-title="Lobo Domesticado"
+                data-artist="Joan Sebastian"
+                data-type="image">
+                <span class="song-emoji">💖</span>
+                <div class="song-details">
+                    <div class="song-name">Lobo Domesticado</div>
+                    <div class="song-artist">Joan Sebastian</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <audio id="audio-player" style="display: none;"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
